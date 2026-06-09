@@ -37,12 +37,13 @@
 
 # Arithmetic operators
 
-print(5+6)
-print(12-6)
-print(12*6)
-print(12/6)
-print(12%6)
+# print(5+6)
+# print(12-6)
+# print(12*6)
+# print(12/6)
+# print(12%6)
 
-# Exercise
+# Right Angle Triangle pattern
 
-print(2**4)
+for i in range(1, 6):
+    print("* " * i)
