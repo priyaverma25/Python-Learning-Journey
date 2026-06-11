@@ -47,3 +47,14 @@
 
 for i in range(1, 6):
     print("* " * i)
+
+
+# Check Data Type
+
+name = "Priya"
+age = 20
+height = 5.4
+
+print(type(name))
+print(type(age))
+print(type(height))
