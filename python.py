@@ -58,3 +58,9 @@ height = 5.4
 print(type(name))
 print(type(age))
 print(type(height))
+
+# varables and print
+
+name = "Alice"
+age = 25
+print(f"Name: {name}, Age: {age}")
