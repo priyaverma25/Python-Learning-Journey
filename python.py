@@ -51,16 +51,22 @@
 
 # Check Data Type
 
-name = "Priya"
-age = 20
-height = 5.4
+# name = "Priya"
+# age = 20
+# height = 5.4
 
-print(type(name))
-print(type(age))
-print(type(height))
+# print(type(name))
+# print(type(age))
+# print(type(height))
 
-# varables and print
+# # varables and print
 
-name = "Alice"
-age = 25
-print(f"Name: {name}, Age: {age}")
+#  name = "Alice
+# age = 25
+# print(f"Name: {name}, Age: {age}")
+
+
+# User input
+
+name = input("Enter your name: ")
+print(f"Hello, {name}!")
