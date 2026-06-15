@@ -68,5 +68,25 @@
 
 # User input
 
-name = input("Enter your name: ")
-print(f"Hello, {name}!")
+# name = input("Enter your name: ")
+# print(f"Hello, {name}!")
+
+# Swap two variables
+
+a, b = 10, 20
+a, b = b, a
+print(f"a={a}, b={b}")
+
+# check variable type
+
+# x = 3.14
+# # <class 'float'>
+# print(type(x))
+# # true
+# print(isinstance(x, float))
+
+# # Multiple Assignment
+
+# x = y = z = 100
+# a, b, c = 1, 2, 3
+# print(x, y, z, a, b, c)
