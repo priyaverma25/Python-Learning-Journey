@@ -73,20 +73,20 @@
 
 # Swap two variables
 
-a, b = 10, 20
-a, b = b, a
-print(f"a={a}, b={b}")
+# a, b = 10, 20
+# a, b = b, a
+# print(f"a={a}, b={b}")
 
 # check variable type
 
-# x = 3.14
-# # <class 'float'>
-# print(type(x))
-# # true
-# print(isinstance(x, float))
+x = 3.14
+# <class 'float'>
+print(type(x))
+# true
+print(isinstance(x, float))
 
-# # Multiple Assignment
+# Multiple Assignment
 
-# x = y = z = 100
-# a, b, c = 1, 2, 3
-# print(x, y, z, a, b, c)
+x = y = z = 100
+a, b, c = 1, 2, 3
+print(x, y, z, a, b, c)
