@@ -79,14 +79,39 @@
 
 # check variable type
 
-x = 3.14
-# <class 'float'>
-print(type(x))
-# true
-print(isinstance(x, float))
+# x = 3.14
+# # <class 'float'>
+# print(type(x))
+# # true
+# print(isinstance(x, float))
 
-# Multiple Assignment
+# # Multiple Assignment
 
-x = y = z = 100
-a, b, c = 1, 2, 3
-print(x, y, z, a, b, c)
+# x = y = z = 100
+# a, b, c = 1, 2, 3
+# print(x, y, z, a, b, c)
+
+# typecasting in python
+
+a = "1"
+a = 1
+b = "2"
+b = 2
+print(a + b)
+
+# Implicit TypeCasting
+
+c = 1.9
+d = 8
+
+print(c + d)
+
+
+# User input
+
+a = input("Enter your name: ")
+print("My name is", a)
+
+x = input("Enter first number: ")
+y = input("Enter second number: ")
+print(x + y)
