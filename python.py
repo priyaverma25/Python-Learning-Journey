@@ -122,28 +122,28 @@
 
 # strings problems
 
-name = "Priya"
-friend = "Chhavi"
-anotherfriend = "Nancy"
-apple = ''' He said, 
-Hi Priya
-hey i am good
-"I want to eat an apple'''
-print(name)
-print(apple)
-print("Hello, " + name)
-print(name[0])
-print(name[1])
-print(name[2])
-print(name[3])
+# name = "Priya"
+# friend = "Chhavi"
+# anotherfriend = "Nancy"
+# apple = ''' He said, 
+# Hi Priya
+# hey i am good
+# "I want to eat an apple'''
+# print(name)
+# print(apple)
+# print("Hello, " + name)
+# print(name[0])
+# print(name[1])
+# print(name[2])
+# print(name[3])
 
 # print(apple[1])
 # print(apple[0])
 # print(apple[3])
 
-print("Let use a for loop\n")
-for character in apple:
-     print(character)
+# print("Let use a for loop\n")
+# for character in apple:
+#      print(character)
 
 
  #  strings day 12
