@@ -93,25 +93,86 @@
 
 # typecasting in python
 
-a = "1"
-a = 1
-b = "2"
-b = 2
-print(a + b)
+# a = "1"
+# a = 1
+# b = "2"
+# b = 2
+# print(a + b)
 
-# Implicit TypeCasting
+# # Implicit TypeCasting
 
-c = 1.9
-d = 8
+# c = 1.9
+# d = 8
 
-print(c + d)
+# print(c + d)
 
 
-# User input
+# # User input
 
-a = input("Enter your name: ")
-print("My name is", a)
+# a = input("Enter your name: ")
+# print("My name is", a)
 
-x = input("Enter first number: ")
-y = input("Enter second number: ")
-print(x + y)
+
+# x = input("Enter first number: ")
+# y = input("Enter second number: ")
+# # print(x + y)
+
+# print(int(x) + int(y))
+
+
+# strings problems
+
+name = "Priya"
+friend = "Chhavi"
+anotherfriend = "Nancy"
+apple = ''' He said, 
+Hi Priya
+hey i am good
+"I want to eat an apple'''
+print(name)
+print(apple)
+print("Hello, " + name)
+print(name[0])
+print(name[1])
+print(name[2])
+print(name[3])
+
+# print(apple[1])
+# print(apple[0])
+# print(apple[3])
+
+print("Let use a for loop\n")
+for character in apple:
+     print(character)
+
+
+ #  strings day 12
+
+fruit = "Mango"
+mangoLen = len(fruit) 
+print(mangoLen)
+print(fruit[0:4])
+print(fruit[1:4])
+print(fruit[:5])
+print(fruit[2:5])
+print(fruit[1:])
+print(fruit[0:-3])
+print(fruit[-5:-2])
+print(fruit[:len(fruit)-3])
+print(fruit[-1:len(fruit)-3])
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
