@@ -1,0 +1,23 @@
+# if statement 
+age = 18
+
+if age >= 18:
+    print("You can vote")
+
+
+# if-else statement
+age = 18
+
+if age >= 18:
+    print("You can vote")
+else:
+    print("You cannot vote")
+
+# Practice Example
+
+age = 16
+
+if age >= 18:
+    print("You can vote")
+else:
+    print("You cannot vote")
