@@ -1,23 +1,59 @@
 # if statement 
-age = 18
+# age = 18
 
-if age >= 18:
-    print("You can vote")
+# if age >= 18:
+#     print("You can vote")
 
 
-# if-else statement
-age = 18
+# # if-else statement
+# age = 18
 
-if age >= 18:
-    print("You can vote")
+# if age >= 18:
+#     print("You can vote")
+# else:
+#     print("You cannot vote")
+
+# # Practice Example
+
+# age = 16
+
+# if age >= 18:
+#     print("You can vote")
+# else:
+#     print("You cannot vote")
+
+ # Positive or Negative Number
+
+num = 5
+
+if num > 0:
+    print("Positive Number")
 else:
-    print("You cannot vote")
+    print("Negative Number")
 
-# Practice Example
+# Zero or Not Zero
 
-age = 16
+num = 0
+
+if num == 0:
+    print("Number is Zero")
+else:
+    print("Number is Not Zero")
+
+# Adult or Minor
+
+age = 20
 
 if age >= 18:
-    print("You can vote")
+    print("Adult")
 else:
-    print("You cannot vote")
+    print("Minor")
+
+# Login System
+
+password = "1234"
+
+if password == "1234":
+    print("Login Successful")
+else:
+    print("Wrong Password")
