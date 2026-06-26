@@ -24,36 +24,112 @@
 
  # Positive or Negative Number
 
-num = 5
+# num = 5
 
-if num > 0:
-    print("Positive Number")
+# if num > 0:
+#     print("Positive Number")
+# else:
+#     print("Negative Number")
+
+# # Zero or Not Zero
+
+# num = 0
+
+# if num == 0:
+#     print("Number is Zero")
+# else:
+#     print("Number is Not Zero")
+
+# # Adult or Minor
+
+# age = 20
+
+# if age >= 18:
+#     print("Adult")
+# else:
+#     print("Minor")
+
+# # Login System
+
+# password = "1234"
+
+# if password == "1234":
+#     print("Login Successful")
+# else:
+#     print("Wrong Password")
+
+
+# Greater Number Check
+
+a = 15
+b = 10
+
+if a > b:
+    print("a is Greater")
 else:
-    print("Negative Number")
+    print("b is Greater")
+    
 
-# Zero or Not Zero
+# Divisible by 5 
 
-num = 0
+num = 20
 
-if num == 0:
-    print("Number is Zero")
+if num % 5 == 0:
+    print("Divisible by 5")
 else:
-    print("Number is Not Zero")
+    print("Not Divisible by 5")
 
-# Adult or Minor
 
-age = 20
+# Student Pass/Fail
 
-if age >= 18:
-    print("Adult")
+marks = 45
+
+if marks >= 33:
+    print("Pass")
 else:
-    print("Minor")
+    print("Fail")
 
-# Login System
 
-password = "1234"
+# Check Even or Odd
 
-if password == "1234":
-    print("Login Successful")
+num = 7
+
+if num % 2 == 0:
+    print("Even")
 else:
-    print("Wrong Password")
+    print("Odd")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
