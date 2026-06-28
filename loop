@@ -72,33 +72,7 @@
 #       break
 
 
-# Check Even or Odd
 
-num = 7
-
-if num % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
-
-# Student Pass/Fail 
-
-marks = 45
-
-if marks >= 33:
-    print("Pass")
-else:
-    print("Fail")
-
-
-# Divisible by 5
-
- num = 20
-
-if num % 5 == 0:
-    print("Divisible by 5")
-else:
-    print("Not Divisible by 5")
 
 
 
