@@ -1,5 +1,60 @@
-def average(a=9, b=1):
-    print("The average is ", (a+b)/2)
+# def average(a=9, b=1):
+#     print("The average is ", (a+b)/2)
     
-# average(4, 6)
-average(b=9)
+# # average(4, 6)
+# average(b=9)
+
+# # function to calculate simple interest
+
+# def simple_interest(p, r, t):
+#     return (p * r * t) / 100
+
+# print(simple_interest(10000, 5, 2))
+
+
+# # function to find largest element in list
+
+# def largest(numbers):
+#     max_num = numbers[0]
+
+#     for num in numbers:
+#         if num > max_num:
+#             max_num = num
+
+#     return max_num
+
+# print(largest([5, 8, 2, 20, 12]))
+
+# function to check palindrome
+
+def is_palindrome(text):
+    return text == text[::-1]
+
+print(is_palindrome("madam"))
+
+
+# function to find sum of list
+
+def list_sum(numbers):
+    total = 0
+
+    for num in numbers:
+        total += num
+
+    return total
+
+print(list_sum([1, 2, 3, 4, 5]))
+
+# functon to count vowels
+
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+
+    for ch in text:
+        if ch in vowels:
+            count += 1
+
+    return count
+
+print(count_vowels("Programming"))
