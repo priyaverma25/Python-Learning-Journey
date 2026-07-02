@@ -27,34 +27,61 @@
 
 # function to check palindrome
 
-def is_palindrome(text):
-    return text == text[::-1]
+# def is_palindrome(text):
+#     return text == text[::-1]
 
-print(is_palindrome("madam"))
+# print(is_palindrome("madam"))
 
 
-# function to find sum of list
+# # function to find sum of list
 
-def list_sum(numbers):
-    total = 0
+# def list_sum(numbers):
+#     total = 0
 
-    for num in numbers:
-        total += num
+#     for num in numbers:
+#         total += num
 
-    return total
+#     return total
 
-print(list_sum([1, 2, 3, 4, 5]))
+# print(list_sum([1, 2, 3, 4, 5]))
 
-# functon to count vowels
+# # functon to count vowels
 
-def count_vowels(text):
-    vowels = "aeiouAEIOU"
-    count = 0
+# def count_vowels(text):
+#     vowels = "aeiouAEIOU"
+#     count = 0
 
-    for ch in text:
-        if ch in vowels:
-            count += 1
+#     for ch in text:
+#         if ch in vowels:
+#             count += 1
 
-    return count
+#     return count
 
-print(count_vowels("Programming"))
+# print(count_vowels("Programming"))
+
+#  baisc function
+# A simple function with no argument and no return value.
+def greet():
+    print("Hello, World")
+greet()
+    
+# function with parameters
+#  A function that takes parameters.
+def greet(name):
+    print(f"Hello, {name}!")
+greet("Akask")
+
+# function with return value
+# A function that returns a value.
+def add(a, b):
+    return a + b
+result = add(6, 6)
+print(result)
+
+# function with default arguments
+# A function with default parameter values.
+def greet(name="World"):
+  print(f"Hello, {name}!")
+  
+greet()
+greet("Akash")  
