@@ -61,57 +61,62 @@
 
 # Greater Number Check
 
-a = 15
-b = 10
+# a = 15
+# b = 10
 
-if a > b:
-    print("a is Greater")
-else:
-    print("b is Greater")
+# if a > b:
+#     print("a is Greater")
+# else:
+#     print("b is Greater")
     
 
-# Divisible by 5 
+# # Divisible by 5 
 
-num = 20
+# num = 20
 
-if num % 5 == 0:
-    print("Divisible by 5")
-else:
-    print("Not Divisible by 5")
-
-
-# Student Pass/Fail
-
-marks = 45
-
-if marks >= 33:
-    print("Pass")
-else:
-    print("Fail")
+# if num % 5 == 0:
+#     print("Divisible by 5")
+# else:
+#     print("Not Divisible by 5")
 
 
-# Check Even or Odd
+# # Student Pass/Fail
 
-num = 7
+# marks = 45
 
-if num % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
-
-# short hand if else statements
-
-a = 330000
-b = 3303
-print("A") if a > b else print("=") if a == b else print("B")
-
-c = 9 if a>b else 0
-print(c)
+# if marks >= 33:
+#     print("Pass")
+# else:
+#     print("Fail")
 
 
+# # Check Even or Odd
 
+# num = 7
 
+# if num % 2 == 0:
+#     print("Even")
+# else:
+#     print("Odd")
 
+# # 3short hand if else statements
+
+# a = 330000
+# b = 3303
+# print("A") if a > b else print("=") if a == b else print("B")
+
+# c = 9 if a>b else 0
+# print(c)
+
+# 45 class if__name__=="__main__" in python
+
+def welcome():
+    print("Hey you are welcome from harry")
+# import harry 
+harry.welcome()
+
+# if__name__ == "__main__":
+    
 
 
 
