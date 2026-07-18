@@ -108,12 +108,13 @@
 # c = 9 if a>b else 0
 # print(c)
 
-# 45 class if__name__=="__main__" in python
+# 45 class if__name__=="__main__" in pythoy 
 
 def welcome():
-    print("Hey you are welcome from harry")
-# import harry 
-harry.welcome()
+    print("Welcome from Harry")
+
+if __name__ == "__main__":
+    welcome()
 
 # if__name__ == "__main__":
     
