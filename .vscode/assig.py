@@ -48,159 +48,152 @@
 #     print("Good Night sir!")       
 
 
-# even/odd 
+# # even/odd 
+# # 
+# num = int(input("Enter number: "))
 
-num = int(input("Enter number: "))
-
-if num % 2 == 0:
-    print("Even")
-else:
-    print("odd")
+# if num % 2 == 0:
+#     print("Even")
+# else:
+#     print("odd")
     
     
-# Leap Year
+# # Leap Year
 
-year = int(input("Enter Year: "))
-if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
-    print("Leap Year")
+# year = int(input("Enter Year: "))
+# if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+#     print("Leap Year")
+# else:
+#     print("Not Leap Year")    
+
+
+# Largest of Three Numbers
+ 
+num1 = 10
+num2 = 25
+num3 = 15 
+
+if (num1 > num2 and num1 > num3):
+   print(num1)
+
+elif(num2 > num1 and num2 > num3):
+    print(num2)
+
 else:
-    print("Not Leap Year")    
+    print(num3)
 
+# Divisible by 3 and 5
 
-# # Largest of Three Numbers
-
-a = int(input())
-b = int(input())
-c = int(input())
-
-if a>b and a>c:
-    print(a) 
-elif b>a and b>c:          
-    print(b)
+num = int(input())
+if num % 3 == 0 and num % 5 == 0:
+    print("Yes")
 else:
-    print(c)
+    print("No")
+    
+    
+ # Voting
+
+age = int(input())
+
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not Eligible")    
+
+ # Pass/Fail
+
+marks=int(input())
+
+if marks >= 33:
+   print("Pass")
+else: 
+   print("Fail")    
+
+ # Character Exists
+
+text="Python"
+
+if "P" in text:
+    print("Found")
+else:
+    print("Not Found")    
+
+ # kaun bane ga Crorepati
+
+questions = [
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript", 
+ "Php", "None", 4
+ ],
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+    ],
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+    ],
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+    ],
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+    ],
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+    ],
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+    ],
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+    ],
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+    ],
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+    ],
+[
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+    ],
+]
+
+levels = [1000, 2000, 3000, 5000, 1000, 2000, 4000, 8000, 16000, 32000]
+
+for i in range(0, len(questions)):
+    question = questions[i] 
+    
+    print(f"\nQuestion for Rs. {levels[i]}")
+    
+    print(f"1. {questions[1]}")      
+    print(f"3. {questions[2]}")
+    print(f"2. {questions[3]}")   
+    print(f"4. {questions[4]}")
+    
+    reply = int(input("Enter your answer (1-4)  "))
+    
+    if reply == questions[-1]:
+        print(f"Correct answer, you have won Rs. {levels[i]}")
+        if(i == 4):
+            money = 10000
+        elif(i == 9):
+            money = 320000
+        elif(i == 14):
+            money = 1000000        
+    else:
+        print("Wrong answer!")
+        break
       
-# Swap Without third variable 
-
-a = 10
-b = 20
-
-a,b = b,a
-
-print(a,b)
-
-
-# # Divisible by 3 and 5
-
-# num = int(input())
-# if num%3==0 and num%5==0:
-#     print("Yes")
-# else:
-#     print("No")
-    
-    
-# # # Voting
-
-# age = int(input())
-
-# if age>=18:
-#     print("Eligible")
-# else:
-#     print("Not Eligible")    
-
-#  # Pass/Fail
-
-# marks=int(input())
-
-# if marks>=33:4
-
-# print("Pass")
-# else: 
-# print("Fail")    
-
-#  # Character Exists
-
-# text="Python"
-
-# if "P" in text:
-#     print("Found")
-# else:
-#     print("Not Found")    
-
-#  # kaun bane ga Crorepati
-
-# questions = [
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript", 
-#  "Php", "None", 4
-#  ],
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript",
-#     "Php", "None", 4
-#     ],
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript",
-#     "Php", "None", 4
-#     ],
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript",
-#     "Php", "None", 4
-#     ],
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript",
-#     "Php", "None", 4
-#     ],
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript",
-#     "Php", "None", 4
-#     ],
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript",
-#     "Php", "None", 4
-#     ],
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript",
-#     "Php", "None", 4
-#     ],
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript",
-#     "Php", "None", 4
-#     ],
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript",
-#     "Php", "None", 4
-#     ],
-# [
-#     "Which language was used to create fb?", "Python", "French", "JavaScript",
-#     "Php", "None", 4
-#     ],
-# ]
-
-# levels = [1000, 2000, 3000, 5000, 1000, 2000, 4000, 8000, 16000, 32000]
-
-# for i in range(0, len(questions)):
-#     question = questions[i] 
-    
-#     print(f"\nQuestion for Rs. {levels[i]}")
-    
-#     print(f"a. {questions[1]}       b. {questions[2]}")
-#     print(f"c. {questions[3]}       d. {questions[4]}")
-    
-#     reply = int(input("Enter your answer (1-4)  "))
-    
-#     if(reply == questions[-1]):
-#         print(f"Correct answer, you have won Rs. {levels[i]}")
-#         if(i == 4):
-#             money = 10000
-#         elif(i == 9):
-#             money = 320000
-#         elif(i == 14):
-#             money = 1000000        
-#     else:
-#         print("Wrong answer!")
-#         break
-      
-# print(f"Your take home money is {money}"
+print(f"\nYour take home money is Rs. {money}")
     
     
     
