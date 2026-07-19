@@ -1,30 +1,30 @@
-#  simple Calculator
+# #  simple Calculator
 
-num1 = float(input("Enter first number: "))
-op = input("Enter operator (+, -, *, /, %): ")
-num2 = float(input("Enter second number: "))
+# num1 = float(input("Enter first number: "))
+# op = input("Enter operator (+, -, *, /, %): ")
+# num2 = float(input("Enter second number: "))
 
-if op == "+":
-    print("Result =", num1 + num2)
+# if op == "+":
+#     print("Result =", num1 + num2)
 
-elif op == "-":
-     print("Result =", num1 - num2)
+# elif op == "-":
+#      print("Result =", num1 - num2)
 
-elif op == "*":
-     print("Result =", num1 * num2)
+# elif op == "*":
+#      print("Result =", num1 * num2)
 
-elif op == "/":
-     print("Result =", num1 / num2)
+# elif op == "/":
+#      print("Result =", num1 / num2)
 
-elif op == "%":
-     print("Result =", num1 % num2)
-else:
-     print("Connot divide by zero")
+# elif op == "%":
+#      print("Result =", num1 % num2)
+# else:
+#      print("Connot divide by zero")
 
 
-     print("Invalid Operator")          
+#      print("Invalid Operator")          
 
-# # Quick Quiz
+# # # Quick Quiz
 
 # nm = "Harry"
 # print(nm[-4:-2])
@@ -32,7 +32,7 @@ else:
 # print(nm[3:5])
 # # Output: "ry"
 
-# # Time wishes problem
+# # # Time wishes problem
 
 # import time
 # t = time.strftime('%H:%M:%S')
@@ -45,49 +45,49 @@ else:
 # elif(hour>=12 and hour<17):
 #     print("Good Afternoon Sir!")
 # elif(hour>=17 and hour<0):
-#     print("Good Night sir!")         
+#     print("Good Night sir!")       
 
 
 # even/odd 
 
-# num = int(input("Enter number: "))
+num = int(input("Enter number: "))
 
-# if num % 2 == 0:
-#     print("Even")
-# else:
-#     print("odd")
+if num % 2 == 0:
+    print("Even")
+else:
+    print("odd")
     
     
-# # Leap Year
+# Leap Year
 
-# year = int(input("Enter Year: "))
-# if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
-#     print("Leap Year")
-# else:
-#     print("Not Leap Year")    
+year = int(input("Enter Year: "))
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print("Leap Year")
+else:
+    print("Not Leap Year")    
 
 
 # # Largest of Three Numbers
 
-# a = int(input())
-# b = int(input())
-# c = int(input())
+a = int(input())
+b = int(input())
+c = int(input())
 
-# if a>b and a>c:
-#     print(a) 
-# elif b>a and b>c:          
-#     print(b)
-# else:
-#     print(c)
+if a>b and a>c:
+    print(a) 
+elif b>a and b>c:          
+    print(b)
+else:
+    print(c)
       
-# # Swap Without third variable 
+# Swap Without third variable 
 
-# a = 10
-# b = 20
+a = 10
+b = 20
 
-# a,b = b,a
+a,b = b,a
 
-# print(a,b)
+print(a,b)
 
 
 # # Divisible by 3 and 5
@@ -200,5 +200,7 @@ else:
 #         print("Wrong answer!")
 #         break
       
-# print(f"Your take home money is {money}")      
+# print(f"Your take home money is {money}"
+    
+    
     

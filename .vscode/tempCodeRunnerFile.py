@@ -1,12 +1,20 @@
-import time
-t = time.strftime('%H:%M:%S')
-hour = int(time.strftime('%H'))
-hour = int(input("Enter hour: "))
-print(hour)
 
-if(hour>0 and hour<12):
-    print("Good morning Sir!")
-elif(hour>=12 and hour<17):
-    print("Good Afternoon Sir!")
-elif(hour>=17 and hour<0):
-    print("Good Night sir!") 
+# a = int(input())
+# b = int(input())
+# c = int(input())
+
+# if a>b and a>c:
+#     print(a) 
+# elif b>a and b>c:          
+#     print(b)
+# else:
+#     print(c)
+      
+# # Swap Without third variable 
+
+# a = 10
+# b = 20
+
+# a,b = b,a
+
+# print(a,b)
