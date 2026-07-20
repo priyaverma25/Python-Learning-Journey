@@ -67,133 +67,148 @@
 #     print("Not Leap Year")    
 
 
-# Largest of Three Numbers
+# # Largest of Three Numbers
  
-num1 = 10
-num2 = 25
-num3 = 15 
+# num1 = 10
+# num2 = 25
+# num3 = 15 
 
-if (num1 > num2 and num1 > num3):
-   print(num1)
+# if (num1 > num2 and num1 > num3):
+#    print(num1)
 
-elif(num2 > num1 and num2 > num3):
-    print(num2)
+# elif(num2 > num1 and num2 > num3):
+#     print(num2)
 
-else:
-    print(num3)
+# else:
+#     print(num3)
 
-# Divisible by 3 and 5
+# # Divisible by 3 and 5
 
-num = int(input())
-if num % 3 == 0 and num % 5 == 0:
-    print("Yes")
-else:
-    print("No")
+# num = int(input())
+# if num % 3 == 0 and num % 5 == 0:
+#     print("Yes")
+# else:
+#     print("No")
     
     
- # Voting
+#  # Voting
 
-age = int(input())
+# age = int(input())
 
-if age >= 18:
-    print("Eligible")
-else:
-    print("Not Eligible")    
+# if age >= 18:
+#     print("Eligible")
+# else:
+#     print("Not Eligible")    
 
- # Pass/Fail
+#  # Pass/Fail
 
-marks=int(input())
+# marks=int(input())
 
-if marks >= 33:
-   print("Pass")
-else: 
-   print("Fail")    
+# if marks >= 33:
+#    print("Pass")
+# else: 
+#    print("Fail")    
 
- # Character Exists
+#  # Character Exists
 
-text="Python"
+# text="Python"
 
-if "P" in text:
-    print("Found")
-else:
-    print("Not Found")    
+# if "P" in text:
+#     print("Found")
+# else:
+#     print("Not Found")    
 
- # kaun bane ga Crorepati
+#  # kaun bane ga Crorepati
 
-questions = [
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript", 
- "Php", "None", 4
- ],
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
-    ],
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
-    ],
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
-    ],
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
-    ],
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
-    ],
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
-    ],
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
-    ],
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
-    ],
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
-    ],
-[
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
-    ],
-]
+# questions = [
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript", 
+#  "Php", "None", 4
+#  ],
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript",
+#     "Php", "None", 4
+#     ],
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript",
+#     "Php", "None", 4
+#     ],
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript",
+#     "Php", "None", 4
+#     ],
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript",
+#     "Php", "None", 4
+#     ],
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript",
+#     "Php", "None", 4
+#     ],
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript",
+#     "Php", "None", 4
+#     ],
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript",
+#     "Php", "None", 4
+#     ],
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript",
+#     "Php", "None", 4
+#     ],
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript",
+#     "Php", "None", 4
+#     ],
+# [
+#     "Which language was used to create fb?", "Python", "French", "JavaScript",
+#     "Php", "None", 4
+#     ],
+# ]
 
-levels = [1000, 2000, 3000, 5000, 1000, 2000, 4000, 8000, 16000, 32000]
+# levels = [1000, 2000, 3000, 5000, 1000, 2000, 4000, 8000, 16000, 32000]
 
-for i in range(0, len(questions)):
-    question = questions[i] 
+# for i in range(0, len(questions)):
+#     question = questions[i] 
     
-    print(f"\nQuestion for Rs. {levels[i]}")
+#     print(f"\nQuestion for Rs. {levels[i]}")
     
-    print(f"1. {questions[1]}")      
-    print(f"3. {questions[2]}")
-    print(f"2. {questions[3]}")   
-    print(f"4. {questions[4]}")
+#     print(f"1. {questions[1]}")      
+#     print(f"3. {questions[2]}")
+#     print(f"2. {questions[3]}")   
+#     print(f"4. {questions[4]}")
     
-    reply = int(input("Enter your answer (1-4)  "))
+#     reply = int(input("Enter your answer (1-4)  "))
     
-    if reply == questions[-1]:
-        print(f"Correct answer, you have won Rs. {levels[i]}")
-        if(i == 4):
-            money = 10000
-        elif(i == 9):
-            money = 320000
-        elif(i == 14):
-            money = 1000000        
-    else:
-        print("Wrong answer!")
-        break
+#     if reply == questions[-1]:
+#         print(f"Correct answer, you have won Rs. {levels[i]}")
+#         if(i == 4):
+#             money = 10000
+#         elif(i == 9):
+#             money = 320000
+#         elif(i == 14):
+#             money = 1000000        
+#     else:
+#         print("Wrong answer!")
+#         break
       
-print(f"\nYour take home money is Rs. {money}")
+# print(f"\nYour take home money is Rs. {money}")
     
+# problem4
     
-    
+st = input("Enter message")
+words = st.split(" ")
+coding = True
+if(coding):
+    nwords = []
+    for word in words:
+        if(len(word)>=3):
+            r1 = "dsf"
+            r2 = "jkr"
+            stnew = r1+ word[1:] + word[0] + r2 
+            nwords.append(stnew)
+        print(" ".join(nwords))
+        
+else:
+    pass          
