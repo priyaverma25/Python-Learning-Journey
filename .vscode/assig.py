@@ -197,73 +197,118 @@
     
 # problem4
     
-st = input("Enter message")
-words = st.split(" ")
-coding = True
-if(coding):
-    nwords = []
-    for word in words:
-        if(len(word)>=3):
-            r1 = "dsf"
-            r2 = "jkr"
-            stnew = r1+ word[1:] + word[0] + r2 
-            nwords.append(stnew)
-        print(" ".join(nwords))
+# st = input("Enter message")
+# words = st.split(" ")
+# coding = True
+# if(coding):
+#     nwords = []
+#     for word in words:
+#         if(len(word)>=3):
+#             r1 = "dsf"
+#             r2 = "jkr"
+#             stnew = r1+ word[1:] + word[0] + r2 
+#             nwords.append(stnew)
+#         print(" ".join(nwords))
         
-else:
-    pass   
+# else:
+#     pass   
 
 
 
 
-# ATM Management System   
+# # ATM Management System   
 
-balance = 10000
-pin = "1234"
+# balance = 10000
+# pin = "1234"
 
-print("====== Welcome to ATM ======")
+# print("====== Welcome to ATM ======")
 
-entered_pin = input("Enter your 4-digit PIN: ")
+# entered_pin = input("Enter your 4-digit PIN: ")
 
-if entered_pin == pin:
+# if entered_pin == pin:
 
-    while True:
-        print("\n===== ATM MENU =====")
-        print("1. Check Balance")
-        print("2. Deposit Money")
-        print("3. Withdraw Money")
-        print("4. Exit")
+#     while True:
+#         print("\n===== ATM MENU =====")
+#         print("1. Check Balance")
+#         print("2. Deposit Money")
+#         print("3. Withdraw Money")
+#         print("4. Exit")
 
-        choice = input("Enter your choice: ")
+#         choice = input("Enter your choice: ")
 
-        if choice == "1":
-            print(f"Your Balance is ₹{balance}")
+#         if choice == "1":
+#             print(f"Your Balance is ₹{balance}")
 
-        elif choice == "2":
-            amount = float(input("Enter deposit amount: ₹"))
-            balance += amount
-            print("Money Deposited Successfully!")
-            print(f"Updated Balance = ₹{balance}")
+#         elif choice == "2":
+#             amount = float(input("Enter deposit amount: ₹"))
+#             balance += amount
+#             print("Money Deposited Successfully!")
+#             print(f"Updated Balance = ₹{balance}")
 
-        elif choice == "3":
-            amount = float(input("Enter withdrawal amount: ₹"))
+#         elif choice == "3":
+#             amount = float(input("Enter withdrawal amount: ₹"))
 
-            if amount <= balance:
-                balance -= amount
-                print("Please collect your cash.")
-                print(f"Remaining Balance = ₹{balance}")
-            else:
-                print("Insufficient Balance!")
+#             if amount <= balance:
+#                 balance -= amount
+#                 print("Please collect your cash.")
+#                 print(f"Remaining Balance = ₹{balance}")
+#             else:
+#                 print("Insufficient Balance!")
 
-        elif choice == "4":
-            print("Thank you for using our ATM!")
-            break
+#         elif choice == "4":
+#             print("Thank you for using our ATM!")
+#             break
 
-        else:
-            print("Invalid Choice!")
+#         else:
+#             print("Invalid Choice!")
 
-else:
-    print("Incorrect PIN!")
+# else:
+#     print("Incorrect PIN!")
+
+
+# Number Guessing Game
+
+import random
+
+number = random.randint(1, 100)
+
+while True:
+    guess = int(input("Guess a number (1-100): "))
+
+    if guess < number:
+        print("Too Low!")
+    elif guess > number:
+        print("Too High!")
+    else:
+        print("Congratulations! You guessed it.")
+        break
+
+# Password Generator
+
+import random
+import string
+
+length = int(input("Enter password length: "))
+
+characters = string.ascii_letters + string.digits + string.punctuation
+password = "".join(random.choice(characters) for _ in range(length))
+
+print("Generated Password:", password)
+
+
+# QR Code Generator
+
+import qrcode
+
+data = input("Enter text or URL: ")
+
+img = qrcode.make(data)
+img.save("qrcode.png")
+
+print("QR Code generated successfully!")
+
+
+
 
 
 
