@@ -268,47 +268,68 @@
 
 # Number Guessing Game
 
-import random
+# import random
 
-number = random.randint(1, 100)
+# number = random.randint(1, 100)
+
+# while True:
+#     guess = int(input("Guess a number (1-100): "))
+
+#     if guess < number:
+#         print("Too Low!")
+#     elif guess > number:
+#         print("Too High!")
+#     else:
+#         print("Congratulations! You guessed it.")
+#         break
+
+# # Password Generator
+
+# import random
+# import string
+
+# length = int(input("Enter password length: "))
+
+# characters = string.ascii_letters + string.digits + string.punctuation
+# password = "".join(random.choice(characters) for _ in range(length))
+
+# print("Generated Password:", password)
+
+
+# # QR Code Generator
+
+# import qrcode
+
+# data = input("Enter text or URL: ")
+
+# img = qrcode.make(data)
+# img.save("qrcode.png")
+
+# print("QR Code generated successfully!")
+
+# Dice Roller
+
+import random
 
 while True:
-    guess = int(input("Guess a number (1-100): "))
+    input("Press Enter to roll the dice...")
+    print("You got:", random.randint(1, 6))
 
-    if guess < number:
-        print("Too Low!")
-    elif guess > number:
-        print("Too High!")
-    else:
-        print("Congratulations! You guessed it.")
+    again = input("Roll again? (yes/no): ").lower()
+    if again != "yes":
+        print("Game Over!")
         break
 
-# Password Generator
+# Countdown Timer 
 
-import random
-import string
+import time
 
-length = int(input("Enter password length: "))
+seconds = int(input("Enter time in seconds: "))
 
-characters = string.ascii_letters + string.digits + string.punctuation
-password = "".join(random.choice(characters) for _ in range(length))
+while seconds:
+    print(seconds)
+    time.sleep(1)
+    seconds -= 1
 
-print("Generated Password:", password)
-
-
-# QR Code Generator
-
-import qrcode
-
-data = input("Enter text or URL: ")
-
-img = qrcode.make(data)
-img.save("qrcode.png")
-
-print("QR Code generated successfully!")
-
-
-
-
-
+print("Time's Up!")
 
