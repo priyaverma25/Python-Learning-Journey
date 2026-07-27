@@ -309,27 +309,59 @@
 
 # Dice Roller
 
+# import random
+
+# while True:
+#     input("Press Enter to roll the dice...")
+#     print("You got:", random.randint(1, 6))
+
+#     again = input("Roll again? (yes/no): ").lower()
+#     if again != "yes":
+#         print("Game Over!")
+#         break
+
+# # Countdown Timer 
+
+# import time
+
+# seconds = int(input("Enter time in seconds: "))
+
+# while seconds:
+#     print(seconds)
+#     time.sleep(1)
+#     seconds -= 1
+
+# print("Time's Up!")
+
+# Random Quote Generator
+
 import random
+quotes = [
+    "Never Give Up!",
+    "Believe in Yourself.",
+    "Success Comes from Consistency.",
+    "Keep learing Every Day."
+]
 
-while True:
-    input("Press Enter to roll the dice...")
-    print("You got:", random.randint(1, 6))
+print(random.choice(quotes))
 
-    again = input("Roll again? (yes/no): ").lower()
-    if again != "yes":
-        print("Game Over!")
-        break
-
-# Countdown Timer 
+# Digital Stopwatch
 
 import time
+input("Press Enter to Start")
+start = time.time()
+input("Press Enter to step")
+end = time.time()
 
-seconds = int(input("Enter time in seconds: "))
+print("Elapsed Time:", round(end - start, 2), "seconds")
 
-while seconds:
-    print(seconds)
-    time.sleep(1)
-    seconds -= 1
+# Age Calculator
 
-print("Time's Up!")
+from datetime import date
+
+birth = int(input("Enter Birth Year: "))
+current = date.today().year
+
+print("Your Age is:", current - birth)
+
 
