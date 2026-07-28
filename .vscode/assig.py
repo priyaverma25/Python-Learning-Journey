@@ -366,49 +366,96 @@
 
 # Check Armstrong Number
 
+# num = int(input("Enter a number: "))
+
+# temp = num
+# total = 0
+
+# while temp > 0:
+#     digit = temp % 10
+#     total += digit ** 3
+#     temp //= 10
+
+# if total == num:
+#     print("Armstrong Number")
+# else:
+#     print("Not Armstrong Number")
+    
+# # Find Maximum Number    
+    
+# numbers = [10, 45, 23, 89, 5]
+
+# print("Largest Number:", max(numbers))  
+
+# # Count Even and Odd Numbers  
+
+# numbers = [10, 15, 8, 21, 30, 7]
+
+# even = 0
+# odd = 0
+
+# for num in numbers:
+#     if num % 2 == 0:
+#         even += 1
+#     else:
+#         odd += 1
+
+# print("Even:", even)
+# print("Odd:", odd)
+
+# # Fibonacci Series
+
+# n = int(input("How many terms? "))
+
+# a, b = 0, 1
+
+# for i in range(n):
+#     print(a, end=" ")
+#     a, b = b, a + b
+
+# Factorial
+
 num = int(input("Enter a number: "))
 
-temp = num
+fact = 1
+
+for i in range(1, num + 1):
+    fact *= i
+
+print("Factorial =", fact)
+
+# Sum of Digits
+
+num = input("Enter a number: ")
+
 total = 0
 
-while temp > 0:
-    digit = temp % 10
-    total += digit ** 3
-    temp //= 10
+for digit in num:
+    total += int(digit)
 
-if total == num:
-    print("Armstrong Number")
-else:
-    print("Not Armstrong Number")
-    
-# Find Maximum Number    
-    
-numbers = [10, 45, 23, 89, 5]
+print("Sum of Digits:", total)
 
-print("Largest Number:", max(numbers))  
+# Count Vowels
 
-# Count Even and Odd Numbers  
+text = input("Enter a word: ").lower()
 
-numbers = [10, 15, 8, 21, 30, 7]
+count = 0
 
-even = 0
-odd = 0
+for ch in text:
+    if ch in "aeiou":
+        count += 1
 
-for num in numbers:
-    if num % 2 == 0:
-        even += 1
-    else:
-        odd += 1
+print("Total Vowels:", count)
 
-print("Even:", even)
-print("Odd:", odd)
+# Reverse a String
 
-# Fibonacci Series
+text = input("Enter a string: ")
 
-n = int(input("How many terms? "))
+print("Reversed String:", text[::-1])
 
-a, b = 0, 1
+# Multiplication Table
 
-for i in range(n):
-    print(a, end=" ")
-    a, b = b, a + b
+num = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
