@@ -335,33 +335,80 @@
 
 # Random Quote Generator
 
-import random
-quotes = [
-    "Never Give Up!",
-    "Believe in Yourself.",
-    "Success Comes from Consistency.",
-    "Keep learing Every Day."
-]
+# import random
+# quotes = [
+#     "Never Give Up!",
+#     "Believe in Yourself.",
+#     "Success Comes from Consistency.",
+#     "Keep learing Every Day."
+# ]
 
-print(random.choice(quotes))
+# print(random.choice(quotes))
 
-# Digital Stopwatch
+# # Digital Stopwatch
 
-import time
-input("Press Enter to Start")
-start = time.time()
-input("Press Enter to step")
-end = time.time()
+# import time
+# input("Press Enter to Start")
+# start = time.time()
+# input("Press Enter to step")
+# end = time.time()
 
-print("Elapsed Time:", round(end - start, 2), "seconds")
+# print("Elapsed Time:", round(end - start, 2), "seconds")
 
-# Age Calculator
+# # Age Calculator
 
-from datetime import date
+# from datetime import date
 
-birth = int(input("Enter Birth Year: "))
-current = date.today().year
+# birth = int(input("Enter Birth Year: "))
+# current = date.today().year
 
-print("Your Age is:", current - birth)
+# print("Your Age is:", current - birth)
 
+# Check Armstrong Number
 
+num = int(input("Enter a number: "))
+
+temp = num
+total = 0
+
+while temp > 0:
+    digit = temp % 10
+    total += digit ** 3
+    temp //= 10
+
+if total == num:
+    print("Armstrong Number")
+else:
+    print("Not Armstrong Number")
+    
+# Find Maximum Number    
+    
+numbers = [10, 45, 23, 89, 5]
+
+print("Largest Number:", max(numbers))  
+
+# Count Even and Odd Numbers  
+
+numbers = [10, 15, 8, 21, 30, 7]
+
+even = 0
+odd = 0
+
+for num in numbers:
+    if num % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+
+print("Even:", even)
+print("Odd:", odd)
+
+# Fibonacci Series
+
+n = int(input("How many terms? "))
+
+a, b = 0, 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
