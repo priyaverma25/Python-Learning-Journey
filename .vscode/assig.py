@@ -415,47 +415,119 @@
 
 # Factorial
 
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-fact = 1
+# fact = 1
 
-for i in range(1, num + 1):
-    fact *= i
+# for i in range(1, num + 1):
+#     fact *= i
 
-print("Factorial =", fact)
+# print("Factorial =", fact)
 
-# Sum of Digits
+# # Sum of Digits
 
-num = input("Enter a number: ")
+# num = input("Enter a number: ")
 
-total = 0
+# total = 0
 
-for digit in num:
-    total += int(digit)
+# for digit in num:
+#     total += int(digit)
 
-print("Sum of Digits:", total)
+# print("Sum of Digits:", total)
 
-# Count Vowels
+# # Count Vowels
 
-text = input("Enter a word: ").lower()
+# text = input("Enter a word: ").lower()
 
-count = 0
+# count = 0
 
-for ch in text:
-    if ch in "aeiou":
-        count += 1
+# for ch in text:
+#     if ch in "aeiou":
+#         count += 1
 
-print("Total Vowels:", count)
+# print("Total Vowels:", count)
 
-# Reverse a String
+# # Reverse a String
 
-text = input("Enter a string: ")
+# text = input("Enter a string: ")
 
-print("Reversed String:", text[::-1])
+# print("Reversed String:", text[::-1])
 
-# Multiplication Table
+# # Multiplication Table
 
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-for i in range(1, 11):
-    print(f"{num} x {i} = {num * i}")
+# for i in range(1, 11):
+#     print(f"{num} x {i} = {num * i}")                                                                                                           
+
+
+# # Geekforgeeks
+
+# n = int(input())
+
+# # code here
+# if n % 3 == 0 and n % 5 == 0:
+ 
+#   print("FizzBuzz")
+
+# elif n % 3 == 0:
+    
+#     print("Fizz")
+
+# elif n % 5 == 0:
+    
+#     print("Buzz")
+
+# else:
+#     print(n)
+
+# problem
+
+x = [1, 2, 3]
+y = x[:]
+y.append(4)
+print(x)
+
+# 
+str1 = 'Python'
+str2 = str1[2:]+str1[:2]
+print(str1 in 2*str2)
+
+#
+ 
+def fun():
+    for x in range(22, 23, 24)
+    print(x)
+fun()
+
+#
+
+Dict = {1:2, 3:4}
+for i, j in Dict.items():
+    print(i, j, sep=":") 
+    
+#
+
+name1 = "Dhoni"
+name2 = "Kohli"
+result = name1[:3] + name2[1:]
+print(result)
+
+# 
+
+list1 = [1, 2, 3, 4]
+list2 = [5, 6, 7, 8]
+result = list(zip(list1, list2))
+print(result) 
+
+# 
+
+a = 32 * 19
+b = 175 * 3 - 5
+
+if b >= a:
+   print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")    
