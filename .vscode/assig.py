@@ -483,51 +483,76 @@
 
 # problem
 
-x = [1, 2, 3]
-y = x[:]
-y.append(4)
-print(x)
+# x = [1, 2, 3]
+# y = x[:]
+# y.append(4)
+# print(x)
 
-# 
-str1 = 'Python'
-str2 = str1[2:]+str1[:2]
-print(str1 in 2*str2)
+# # 
+# str1 = 'Python'
+# str2 = str1[2:]+str1[:2]
+# print(str1 in 2*str2)
 
-#
+# #
  
-def fun():
-    for x in range(22, 23, 24)
-    print(x)
-fun()
+# def fun():
+#     for x in range(22, 23, 24)
+#     print(x)
+# fun()
 
-#
+# #
 
-Dict = {1:2, 3:4}
-for i, j in Dict.items():
-    print(i, j, sep=":") 
+# Dict = {1:2, 3:4}
+# for i, j in Dict.items():
+#     print(i, j, sep=":") 
     
-#
+# #
 
-name1 = "Dhoni"
-name2 = "Kohli"
-result = name1[:3] + name2[1:]
-print(result)
+# name1 = "Dhoni"
+# name2 = "Kohli"
+# result = name1[:3] + name2[1:]
+# print(result)
 
-# 
+# # 
 
-list1 = [1, 2, 3, 4]
-list2 = [5, 6, 7, 8]
-result = list(zip(list1, list2))
-print(result) 
+# list1 = [1, 2, 3, 4]
+# list2 = [5, 6, 7, 8]
+# result = list(zip(list1, list2))
+# print(result) 
 
-# 
+# # 
 
-a = 32 * 19
-b = 175 * 3 - 5
+# a = 32 * 19
+# b = 175 * 3 - 5
 
-if b >= a:
-   print("b is greater than a")
-elif a == b:
-    print("a and b are equal")
-else:
-    print("a is greater than b")    
+# if b >= a:
+#    print("b is greater than a")
+# elif a == b:
+#     print("a and b are equal")
+# else:
+#     print("a is greater than b")    
+
+# library management system
+
+class Library:
+    def __init__(self):
+        self.nobooks = 0
+        self.books = []
+        
+    def addBook(self, book):
+        self.books.append(book)
+        self.nobooks = len(self.books)
+             
+    def showInfo(self):
+      print(f"The library has {self.nobooks} books. The books are")
+      for book in self.books:
+          print(book)
+
+li = Library()
+li.addBook("Harry Potter1")
+li.addBook("Harry Potter2")
+li.addBook("Harry Potter3")
+li.showInfo()       
+
+
+
