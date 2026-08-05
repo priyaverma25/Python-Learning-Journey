@@ -534,25 +534,34 @@
 
 # library management system
 
-class Library:
-    def __init__(self):
-        self.nobooks = 0
-        self.books = []
+# class Library:
+#     def __init__(self):
+#         self.nobooks = 0
+#         self.books = []
         
-    def addBook(self, book):
-        self.books.append(book)
-        self.nobooks = len(self.books)
+#     def addBook(self, book):
+#         self.books.append(book)
+#         self.nobooks = len(self.books)
              
-    def showInfo(self):
-      print(f"The library has {self.nobooks} books. The books are")
-      for book in self.books:
-          print(book)
+#     def showInfo(self):
+#       print(f"The library has {self.nobooks} books. The books are")
+#       for book in self.books:
+#           print(book)
 
-li = Library()
-li.addBook("Harry Potter1")
-li.addBook("Harry Potter2")
-li.addBook("Harry Potter3")
-li.showInfo()       
+# li = Library()
+# li.addBook("Harry Potter1")
+# li.addBook("Harry Potter2")
+# li.addBook("Harry Potter3")
+# li.showInfo()       
 
 
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
 
+print("Hello", name)
+print("Your age is", age)
+
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
