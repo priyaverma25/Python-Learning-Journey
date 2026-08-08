@@ -1,83 +1,96 @@
-# for loop
+# # for loop
 
-name = 'Priya'
-for i in name:
-   print(i)
-   if(i== 'b'):
-      print("This is something special")
+# name = 'Priya'
+# for i in name:
+#    print(i)
+#    if(i== 'b'):
+#       print("This is something special")
 
-colors = ["Red", "Green", "Blue", "Yellow"]      
-for x in colors:
-   print(x)
-   for i in colors:
-      print(i)
-
-
-for k in range(5):
-    print(k)
-
-for k in range(5):
-   print(k + 1)
+# colors = ["Red", "Green", "Blue", "Yellow"]      
+# for x in colors:
+#    print(x)
+#    for i in colors:
+#       print(i)
 
 
-for k in range(5, 50):
-   print(k + 1)
+# for k in range(5):
+#     print(k)
+
+# for k in range(5):
+#    print(k + 1)
+
+
+# for k in range(5, 50):
+#    print(k + 1)
 
    
-for k in range(5, 50, 5):
-   print(k)
+# for k in range(5, 50, 5):
+#    print(k)
 
 
 
-# while loop
+# # while loop
 
-i = 0
-while(i<5):
-    print(i)
-    i = i + 1
+# i = 0
+# while(i<5):
+#     print(i)
+#     i = i + 1
 
-i = 0
-while(i>=5):
-    print(i)
-    i = i + 1
-
-
-i = 0
-while(i<=5):
-    print(i)
-    i = i + 1
-
-count = 5
-while (count > 0):
-    print(count) 
-    count = count - 1
-else:
-    print("I am inside else")
+# i = 0
+# while(i>=5):
+#     print(i)
+#     i = i + 1
 
 
-# break statement
+# i = 0
+# while(i<=5):
+#     print(i)
+#     i = i + 1
 
-for i in range(12):
-    if(i==10):
-      print("Skip the iteration")
-      continue
-    print("5 X", i+1, "=", 5*(i+1))
-
-# print("Loop is ended because of break statement")
-
-i = 0
-while True:
-   print(i)
-   i = i + 1
-   if(i%100 == 0):
-      break
+# count = 5
+# while (count > 0):
+#     print(count) 
+#     count = count - 1
+# else:
+#     print("I am inside else")
 
 
+# # break statement
 
+# for i in range(12):
+#     if(i==10):
+#       print("Skip the iteration")
+#       continue
+#     print("5 X", i+1, "=", 5*(i+1))
 
+# # print("Loop is ended because of break statement")
 
+# i = 0
+# while True:
+#    print(i)
+#    i = i + 1
+#    if(i%100 == 0):
+#       break
 
+# Table ke loop
+table = int(input("Number enter करें: "))
 
+for number in range(1, 11):
+    print(table, "x", number, "=", table * number)
+
+# continue
+for number in range(1, 6):
+    if number == 3:
+        continue
+
+    print(number)
+
+# break loop
+for number in range(1, 11):
+    if number == 6:
+        break
+
+    print(number)
 
 
 
