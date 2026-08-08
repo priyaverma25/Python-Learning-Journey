@@ -89,33 +89,57 @@
 
 # Instance Variables vs Class Variables in Python
 
+# class Student:
+    
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+# s1 = Student("Priya", 20)
+# s2 = Student("Rahul", 21)
+
+# print(s1.name)
+# print(s2.name)
+
+# # Changing an Instance Variable
+# class Student:
+    
+#     def __init__(self, name):
+#         self.name = name
+
+# s1 = Student("Priya")
+# s2 = Student("Rahul")
+
+# s1.name = "Anjali"
+
+# print(s1.name)
+# print(s2.name)
+
+# # Example
+
+# class Student:
+    
+#     school = "ABC School"
+
+#     def __init__(self, name):
+#         self.name = name
+
+# s1 = Student("Priya")
+# s2 = Student("Rahul")
+
+# print(s1.school)
+# print(s2.school)
+
+# Changing a Class Variable
 class Student:
     
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+    school = "ABC School"
 
-s1 = Student("Priya", 20)
-s2 = Student("Rahul", 21)
+Student.school = "XYZ School"
 
-print(s1.name)
-print(s2.name)
+print(Student.school)
 
-# Changing an Instance Variable
-class Student:
-    
-    def __init__(self, name):
-        self.name = name
-
-s1 = Student("Priya")
-s2 = Student("Rahul")
-
-s1.name = "Anjali"
-
-print(s1.name)
-print(s2.name)
-
-# Example
+# Example with Both Variables
 
 class Student:
     
@@ -127,6 +151,8 @@ class Student:
 s1 = Student("Priya")
 s2 = Student("Rahul")
 
+print(s1.name)
 print(s1.school)
-print(s2.school)
 
+print(s2.name)
+print(s2.school)

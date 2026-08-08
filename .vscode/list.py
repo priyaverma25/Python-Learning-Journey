@@ -1,4 +1,24 @@
-# Create a List
+
+
+
+# List बनाना
+fruits = ["apple", "mango", "banana"]
+
+# पूरी list दिखाना
+print(fruits)
+
+# एक item दिखाना
+print(fruits[0])  # apple
+
+# नया item जोड़ना
+fruits.append("orange")
+
+# item हटाना
+fruits.remove("mango")
+
+# सभी items दिखाना
+for fruit in fruits:
+    print(fruit)# Create a List
 
 from ast import Add, List
 from xml.etree.ElementTree import Element
