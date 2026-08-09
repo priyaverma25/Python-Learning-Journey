@@ -566,55 +566,146 @@
 # else:
 #     print("You are not eligible to vote.")
 
-# 1. Hello World
-print("Hello World")
+# # 1. Hello World
+# print("Hello World")
 
-# 2. Variables
-name = "Rahul"
-age = 18
+# # 2. Variables
+# name = "Rahul"
+# age = 18
 
-print("Name:", name)
-print("Age:", age)
+# print("Name:", name)
+# print("Age:", age)
 
-# 3. User input
-name = input("अपना नाम लिखें: ")
-print("Hello", name)
+# # 3. User input
+# name = input("अपना नाम लिखें: ")
+# print("Hello", name)
 
-# 4. Addition
-number1 = int(input("पहला number: "))
-number2 = int(input("दूसरा number: "))
+# # 4. Addition
+# number1 = int(input("पहला number: "))
+# number2 = int(input("दूसरा number: "))
 
-total = number1 + number2
-print("Total:", total)
+# total = number1 + number2
+# print("Total:", total)
 
-# 5. If-else
-number = int(input("एक number लिखें: "))
+# # 5. If-else
+# number = int(input("एक number लिखें: "))
 
-if number % 2 == 0:
-    print("Even number")
+# if number % 2 == 0:
+#     print("Even number")
+# else:
+#     print("Odd number")
+
+# # 6. For loop
+# for number in range(1, 6):
+#     print(number)
+
+# # 7. While loop
+# number = 1
+
+# while number <= 5:
+#     print(number)
+#     number += 1
+
+# # 8. List
+# fruits = ["Apple", "Banana", "Mango"]
+
+# for fruit in fruits:
+#     print(fruit)
+
+# # 9. Function
+# def add(a, b):
+#     return a + b
+
+# result = add(10, 20)
+# print("Result:", result)
+
+# Student Result System
+
+def calculate_total(marks):
+    return sum(marks)
+
+
+def calculate_percentage(total, number_of_subjects):
+    return total / number_of_subjects
+
+
+def find_grade(percentage):
+    if percentage >= 90:
+        return "A+"
+    elif percentage >= 80:
+        return "A"
+    elif percentage >= 70:
+        return "B"
+    elif percentage >= 60:
+        return "C"
+    elif percentage >= 50:
+        return "D"
+    else:
+        return "F"
+
+
+print("===== STUDENT RESULT SYSTEM =====")
+
+student_name = input("Student का नाम लिखें: ")
+roll_number = input("Roll number लिखें: ")
+
+subjects = ["Hindi", "English", "Math", "Science", "Computer"]
+marks = []
+
+# प्रत्येक subject के marks लेना
+for subject in subjects:
+    while True:
+        mark = int(input(f"{subject} के marks लिखें (0-100): "))
+
+        if 0 <= mark <= 100:
+            marks.append(mark)
+            break
+        else:
+            print("Marks केवल 0 से 100 के बीच लिखें।")
+
+# Result calculate करना
+total = calculate_total(marks)
+percentage = calculate_percentage(total, len(subjects))
+grade = find_grade(percentage)
+
+# प्रत्येक subject में pass check करना
+is_pass = True
+
+for mark in marks:
+    if mark < 33:
+        is_pass = False
+        break
+
+# Result दिखाना
+print("\n===== RESULT =====")
+print("Student Name:", student_name)
+print("Roll Number:", roll_number)
+print("----------------------------")
+
+for index in range(len(subjects)):
+    print(subjects[index], ":", marks[index])
+
+print("----------------------------")
+print("Total Marks:", total, "/", len(subjects) * 100)
+print("Percentage:", round(percentage, 2), "%")
+print("Grade:", grade)
+
+if is_pass:
+    print("Result: PASS")
 else:
-    print("Odd number")
+    print("Result: FAIL")
 
-# 6. For loop
-for number in range(1, 6):
-    print(number)
+# Highest और lowest marks
+highest_marks = max(marks)
+lowest_marks = min(marks)
 
-# 7. While loop
-number = 1
+highest_index = marks.index(highest_marks)
+lowest_index = marks.index(lowest_marks)
 
-while number <= 5:
-    print(number)
-    number += 1
+print("\nHighest Marks:", highest_marks)
+print("Highest Subject:", subjects[highest_index])
 
-# 8. List
-fruits = ["Apple", "Banana", "Mango"]
+print("Lowest Marks:", lowest_marks)
+print("Lowest Subject:", subjects[lowest_index])
 
-for fruit in fruits:
-    print(fruit)
-
-# 9. Function
-def add(a, b):
-    return a + b
-
-result = add(10, 20)
-print("Result:", result)
+print("\n===== PROGRAM FINISHED =====")
