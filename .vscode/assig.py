@@ -555,13 +555,66 @@
 # li.showInfo()       
 
 
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
+# name = input("Enter your name: ")
+# age = int(input("Enter your age: "))
 
+# print("Hello", name)
+# print("Your age is", age)
+
+# if age >= 18:
+#     print("You are eligible to vote.")
+# else:
+#     print("You are not eligible to vote.")
+
+# 1. Hello World
+print("Hello World")
+
+# 2. Variables
+name = "Rahul"
+age = 18
+
+print("Name:", name)
+print("Age:", age)
+
+# 3. User input
+name = input("अपना नाम लिखें: ")
 print("Hello", name)
-print("Your age is", age)
 
-if age >= 18:
-    print("You are eligible to vote.")
+# 4. Addition
+number1 = int(input("पहला number: "))
+number2 = int(input("दूसरा number: "))
+
+total = number1 + number2
+print("Total:", total)
+
+# 5. If-else
+number = int(input("एक number लिखें: "))
+
+if number % 2 == 0:
+    print("Even number")
 else:
-    print("You are not eligible to vote.")
+    print("Odd number")
+
+# 6. For loop
+for number in range(1, 6):
+    print(number)
+
+# 7. While loop
+number = 1
+
+while number <= 5:
+    print(number)
+    number += 1
+
+# 8. List
+fruits = ["Apple", "Banana", "Mango"]
+
+for fruit in fruits:
+    print(fruit)
+
+# 9. Function
+def add(a, b):
+    return a + b
+
+result = add(10, 20)
+print("Result:", result)
