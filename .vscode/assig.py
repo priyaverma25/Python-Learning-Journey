@@ -621,91 +621,127 @@
 
 # Student Result System
 
-def calculate_total(marks):
-    return sum(marks)
+# def calculate_total(marks):
+#     return sum(marks)
 
 
-def calculate_percentage(total, number_of_subjects):
-    return total / number_of_subjects
+# def calculate_percentage(total, number_of_subjects):
+#     return total / number_of_subjects
 
 
-def find_grade(percentage):
-    if percentage >= 90:
-        return "A+"
-    elif percentage >= 80:
-        return "A"
-    elif percentage >= 70:
-        return "B"
-    elif percentage >= 60:
-        return "C"
-    elif percentage >= 50:
-        return "D"
-    else:
-        return "F"
+# def find_grade(percentage):
+#     if percentage >= 90:
+#         return "A+"
+#     elif percentage >= 80:
+#         return "A"
+#     elif percentage >= 70:
+#         return "B"
+#     elif percentage >= 60:
+#         return "C"
+#     elif percentage >= 50:
+#         return "D"
+#     else:
+#         return "F"
 
 
-print("===== STUDENT RESULT SYSTEM =====")
+# print("===== STUDENT RESULT SYSTEM =====")
 
-student_name = input("Student का नाम लिखें: ")
-roll_number = input("Roll number लिखें: ")
+# student_name = input("Student का नाम लिखें: ")
+# roll_number = input("Roll number लिखें: ")
 
-subjects = ["Hindi", "English", "Math", "Science", "Computer"]
-marks = []
+# subjects = ["Hindi", "English", "Math", "Science", "Computer"]
+# marks = []
 
-# प्रत्येक subject के marks लेना
-for subject in subjects:
-    while True:
-        mark = int(input(f"{subject} के marks लिखें (0-100): "))
+# # प्रत्येक subject के marks लेना
+# for subject in subjects:
+#     while True:
+#         mark = int(input(f"{subject} के marks लिखें (0-100): "))
 
-        if 0 <= mark <= 100:
-            marks.append(mark)
-            break
-        else:
-            print("Marks केवल 0 से 100 के बीच लिखें।")
+#         if 0 <= mark <= 100:
+#             marks.append(mark)
+#             break
+#         else:
+#             print("Marks केवल 0 से 100 के बीच लिखें।")
 
-# Result calculate करना
-total = calculate_total(marks)
-percentage = calculate_percentage(total, len(subjects))
-grade = find_grade(percentage)
+# # Result calculate करना
+# total = calculate_total(marks)
+# percentage = calculate_percentage(total, len(subjects))
+# grade = find_grade(percentage)
 
-# प्रत्येक subject में pass check करना
-is_pass = True
+# # प्रत्येक subject में pass check करना
+# is_pass = True
 
-for mark in marks:
-    if mark < 33:
-        is_pass = False
-        break
+# for mark in marks:
+#     if mark < 33:
+#         is_pass = False
+#         break
 
-# Result दिखाना
-print("\n===== RESULT =====")
-print("Student Name:", student_name)
-print("Roll Number:", roll_number)
-print("----------------------------")
+# # Result दिखाना
+# print("\n===== RESULT =====")
+# print("Student Name:", student_name)
+# print("Roll Number:", roll_number)
+# print("----------------------------")
 
-for index in range(len(subjects)):
-    print(subjects[index], ":", marks[index])
+# for index in range(len(subjects)):
+#     print(subjects[index], ":", marks[index])
 
-print("----------------------------")
-print("Total Marks:", total, "/", len(subjects) * 100)
-print("Percentage:", round(percentage, 2), "%")
-print("Grade:", grade)
+# print("----------------------------")
+# print("Total Marks:", total, "/", len(subjects) * 100)
+# print("Percentage:", round(percentage, 2), "%")
+# print("Grade:", grade)
 
-if is_pass:
-    print("Result: PASS")
-else:
-    print("Result: FAIL")
+# if is_pass:
+#     print("Result: PASS")
+# else:
+#     print("Result: FAIL")
 
-# Highest और lowest marks
-highest_marks = max(marks)
-lowest_marks = min(marks)
+# # Highest और lowest marks
+# highest_marks = max(marks)
+# lowest_marks = min(marks)
 
-highest_index = marks.index(highest_marks)
-lowest_index = marks.index(lowest_marks)
+# highest_index = marks.index(highest_marks)
+# lowest_index = marks.index(lowest_marks)
 
-print("\nHighest Marks:", highest_marks)
-print("Highest Subject:", subjects[highest_index])
+# print("\nHighest Marks:", highest_marks)
+# print("Highest Subject:", subjects[highest_index])
 
-print("Lowest Marks:", lowest_marks)
-print("Lowest Subject:", subjects[lowest_index])
+# print("Lowest Marks:", lowest_marks)
+# print("Lowest Subject:", subjects[lowest_index])
 
-print("\n===== PROGRAM FINISHED =====")
+# print("\n===== PROGRAM FINISH =====")
+
+# Sum of Digits
+num = int(input("Enter a number: "))
+
+total = 0
+
+while num > 0:
+    digit = num % 10
+    total = total + digit
+    num = num // 10
+
+print("Sum of digits:", total)       
+        
+# Count Vowels        
+text = input("Enter a string: ")
+
+count = 0
+
+for char in text:
+    if char.lower() in "aeiou":
+        count += 1
+
+print("Number of vowels:", count)
+
+
+# Reverse a Number
+num = int(input("Enter a number: "))
+
+reverse = 0
+
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+
+print("Reversed number:", reverse)
