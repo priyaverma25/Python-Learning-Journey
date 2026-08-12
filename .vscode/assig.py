@@ -711,37 +711,58 @@
 # print("\n===== PROGRAM FINISH =====")
 
 # Sum of Digits
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-total = 0
+# total = 0
 
-while num > 0:
-    digit = num % 10
-    total = total + digit
-    num = num // 10
+# while num > 0:
+#     digit = num % 10
+#     total = total + digit
+#     num = num // 10
 
-print("Sum of digits:", total)       
+# print("Sum of digits:", total)       
         
-# Count Vowels        
-text = input("Enter a string: ")
+# # Count Vowels        
+# text = input("Enter a string: ")
 
-count = 0
+# count = 0
 
-for char in text:
-    if char.lower() in "aeiou":
-        count += 1
+# for char in text:
+#     if char.lower() in "aeiou":
+#         count += 1
 
-print("Number of vowels:", count)
+# print("Number of vowels:", count)
 
 
-# Reverse a Number
-num = int(input("Enter a number: "))
+# # Reverse a Number
+# num = int(input("Enter a number: "))
 
-reverse = 0
+# reverse = 0
 
-while num > 0:
-    digit = num % 10
-    reverse = reverse * 10 + digit
-    num = num // 10
+# while num > 0:
+#     digit = num % 10
+#     reverse = reverse * 10 + digit
+#     num = num // 10
 
-print("Reversed number:", reverse)
+# print("Reversed number:", reverse)
+
+# Largest Number Without max()
+numbers = [12, 45, 7, 89, 34, 23]
+
+largest = numbers[0]
+
+for num in numbers:
+    if num > largest:
+        largest = num
+
+print("Largest number:", largest)
+
+# Palindrome Checker
+word = input("Enter a word: ")
+
+reverse = word[::-1]
+
+if word.lower() == reverse.lower():
+    print("Palindrome")
+else:
+    print("Not Palindrome")
