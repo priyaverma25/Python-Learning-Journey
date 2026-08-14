@@ -747,22 +747,22 @@
 # print("Reversed number:", reverse)
 
 # Largest Number Without max()
-numbers = [12, 45, 7, 89, 34, 23]
+# numbers = [12, 45, 7, 89, 34, 23]
 
-largest = numbers[0]
+# largest = numbers[0]
 
-for num in numbers:
-    if num > largest:
-        largest = num
+# for num in numbers:
+#     if num > largest:
+#         largest = num
 
-print("Largest number:", largest)
+# print("Largest number:", largest)
 
-# Palindrome Checker
-word = input("Enter a word: ")
+# # Palindrome Checker
+# word = input("Enter a word: ")
 
-reverse = word[::-1]
+# reverse = word[::-1]
 
-if word.lower() == reverse.lower():
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+# if word.lower() == reverse.lower():
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")

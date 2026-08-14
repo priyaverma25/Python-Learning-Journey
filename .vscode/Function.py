@@ -61,47 +61,47 @@
 
 #  baisc function
 # A simple function with no argument and no return value.
-def greet():
-    print("Hello, World")
-greet()
+# def greet():
+#     print("Hello, World")
+# greet()
     
-# function with parameters
-#  A function that takes parameters.
-def greet(name):
-    print(f"Hello, {name}!")
-greet("Akask")
+# # function with parameters
+# #  A function that takes parameters.
+# def greet(name):
+#     print(f"Hello, {name}!")
+# greet("Akask")
 
-# function with return value
-# A function that returns a value.
-def add(a, b):
-    return a + b
-result = add(6, 6)
-print(result)
+# # function with return value
+# # A function that returns a value.
+# def add(a, b):
+#     return a + b
+# result = add(6, 6)
+# print(result)
 
-# function with default arguments
-# A function with default parameter values.
-def greet(name="World"):
-  print(f"Hello, {name}!")
+# # function with default arguments
+# # A function with default parameter values.
+# def greet(name="World"):
+#   print(f"Hello, {name}!")
   
-greet()
-greet("Akash")  
+# greet()
+# greet("Akash")  
 
 
-# Recursion in python
+# # Recursion in python
 
-def factorial(n):
-    if(n==0 or n==1):
-        return 1 
-    else:
-        return n * factorial(n-1)
+# def factorial(n):
+#     if(n==0 or n==1):
+#         return 1 
+#     else:
+#         return n * factorial(n-1)
     
-    print(factorial(5))
-    # 5 * factorial(4)
-    # 5 * 4 * factorial(3)
-    # 5 * 4 * 3 * factorial(2)
-    # 5 * 4 * 3 * 2 * factorial(1)
-    # 5 * 4 * 3 * 2 * 1 * factorial(0)
-    f(0) = 0
-    f(1) = 1
-    f(2) = f(1) + f(0)
-    f(n) = f(n-1) + f(n-2)
+#     print(factorial(5))
+#     # 5 * factorial(4)
+#     # 5 * 4 * factorial(3)
+#     # 5 * 4 * 3 * factorial(2)
+#     # 5 * 4 * 3 * 2 * factorial(1)
+#     # 5 * 4 * 3 * 2 * 1 * factorial(0)
+#     f(0) = 0
+#     f(1) = 1
+#     f(2) = f(1) + f(0)
+#     f(n) = f(n-1) + f(n-2)

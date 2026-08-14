@@ -1,56 +1,56 @@
-# Day of Week Finder
+# # Day of Week Finder
 
-day = int(input("Enter day number (1-7): "))
+# day = int(input("Enter day number (1-7): "))
 
-match day:
-    case 1:
-        print("Monday")
-    case 2:
-        print("Tuesday")
-    case 3:
-        print("Wednesday")
-    case 4:
-        print("Thursday")
-    case 5:
-        print("Friday")
-    case 6:
-        print("Saturday")
-    case 7:
-        print("Sunday")
-    case _:
-        print("Invalid day")
+# match day:
+#     case 1:
+#         print("Monday")
+#     case 2:
+#         print("Tuesday")
+#     case 3:
+#         print("Wednesday")
+#     case 4:
+#         print("Thursday")
+#     case 5:
+#         print("Friday")
+#     case 6:
+#         print("Saturday")
+#     case 7:
+#         print("Sunday")
+#     case _:
+#         print("Invalid day")
             
-# Month Name
+# # Month Name
 
-month = int(input("Enter month number (1-12): "))
+# month = int(input("Enter month number (1-12): "))
 
-match month:
-    case 1:
-        print("January")
-    case 2:
-        print("February")
-    case 3:
-        print("March")
-    case 4:
-        print("April")
-    case 5:
-        print("May")
-    case 6:
-        print("June")
-    case 7:
-        print("July")
-    case 8:
-        print("August")
-    case 9:
-        print("September")
-    case 10:
-        print("October")
-    case 11:
-        print("November")
-    case 12:
-        print("December")
-    case _:
-        print("Invalid month")
+# match month:
+#     case 1:
+#         print("January")
+#     case 2:
+#         print("February")
+#     case 3:
+#         print("March")
+#     case 4:
+#         print("April")
+#     case 5:
+#         print("May")
+#     case 6:
+#         print("June")
+#     case 7:
+#         print("July")
+#     case 8:
+#         print("August")
+#     case 9:
+#         print("September")
+#     case 10:
+#         print("October")
+#     case 11:
+#         print("November")
+#     case 12:
+#         print("December")
+#     case _:
+#         print("Invalid month")
         
         
 # Grade Checker
@@ -108,7 +108,37 @@ match month:
 #         print("Invalid operator")
         
         
-        
+# Menu-Based Calculator Using Match-Case
+
+print("===== Simple Calculator =====")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+choice = int(input("Enter your choice (1-4): "))
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+match choice:
+    case 1:
+        print("Result:", num1 + num2)
+
+    case 2:
+        print("Result:", num1 - num2)
+
+    case 3:
+        print("Result:", num1 * num2)
+
+    case 4:
+        if num2 != 0:
+            print("Result:", num1 / num2)
+        else:
+            print("Cannot divide by zero")
+
+    case _:
+        print("Invalid choice")        
         
         
         
