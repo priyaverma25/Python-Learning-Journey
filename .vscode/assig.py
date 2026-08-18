@@ -766,3 +766,36 @@
 #     print("Palindrome")
 # else:
 #     print("Not Palindrome")
+
+# Count Digits
+num = int(input("Enter number: "))
+
+count = 0
+
+while num != 0:
+    num = num // 10
+    count += 1
+
+print("Total digits:", count)
+
+# Largest Number Without max()
+numbers = [12, 45, 7, 89, 34]
+
+largest = numbers[0]
+
+for num in numbers:
+    if num > largest:
+        largest = num
+
+print("Largest:", largest)
+
+# Remove Duplicates
+nums = [1, 2, 2, 3, 4, 4, 5]
+
+result = []
+
+for num in nums:
+    if num not in result:
+        result.append(num)
+
+print(result)
