@@ -768,34 +768,56 @@
 #     print("Not Palindrome")
 
 # Count Digits
-num = int(input("Enter number: "))
+# num = int(input("Enter number: "))
 
-count = 0
+# count = 0
 
-while num != 0:
-    num = num // 10
-    count += 1
+# while num != 0:
+#     num = num // 10
+#     count += 1
 
-print("Total digits:", count)
+# print("Total digits:", count)
 
-# Largest Number Without max()
-numbers = [12, 45, 7, 89, 34]
+# # Largest Number Without max()
+# numbers = [12, 45, 7, 89, 34]
 
-largest = numbers[0]
+# largest = numbers[0]
 
-for num in numbers:
-    if num > largest:
-        largest = num
+# for num in numbers:
+#     if num > largest:
+#         largest = num
 
-print("Largest:", largest)
+# print("Largest:", largest)
 
-# Remove Duplicates
-nums = [1, 2, 2, 3, 4, 4, 5]
+# # Remove Duplicates
+# nums = [1, 2, 2, 3, 4, 4, 5]
 
-result = []
+# result = []
+
+# for num in nums:
+#     if num not in result:
+#         result.append(num)
+
+# print(result)
+
+
+# Second Largest Number ⭐⭐
+nums = [10, 40, 20, 50, 30]
+
+largest = nums[0]
+second = nums[0]
 
 for num in nums:
-    if num not in result:
-        result.append(num)
+    if num > largest:
+        second = largest
+        largest = num
+    elif num > second and num != largest:
+        second = num
 
-print(result)
+print("Second largest:", second)
+
+# Multiplication Table
+num = int(input("Enter number: "))
+
+for i in range(1, 11):
+    print(num, "x", i, "=", num * i)
