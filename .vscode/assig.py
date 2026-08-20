@@ -801,23 +801,43 @@
 # print(result)
 
 
-# Second Largest Number ⭐⭐
-nums = [10, 40, 20, 50, 30]
+# # Second Largest Number ⭐⭐
+# nums = [10, 40, 20, 50, 30]
 
-largest = nums[0]
-second = nums[0]
+# largest = nums[0]
+# second = nums[0]
 
-for num in nums:
-    if num > largest:
-        second = largest
-        largest = num
-    elif num > second and num != largest:
-        second = num
+# for num in nums:
+#     if num > largest:
+#         second = largest
+#         largest = num
+#     elif num > second and num != largest:
+#         second = num
 
-print("Second largest:", second)
+# print("Second largest:", second)
 
-# Multiplication Table
-num = int(input("Enter number: "))
+# # Multiplication Table
+# num = int(input("Enter number: "))
 
-for i in range(1, 11):
-    print(num, "x", i, "=", num * i)
+# for i in range(1, 11):
+#     print(num, "x", i, "=", num * i)
+
+
+# Divisible by 3 and 5
+num = int(input("Enter a number: "))
+
+if num % 3 == 0 and num % 5 == 0:
+    print("Divisible by 3 and 5")
+else:
+    print("Not divisible by 3 and 5")
+ 
+# Sum if 1 to n   
+n = int(input("Enter number: "))
+
+total = 0
+
+for i in range(1, n + 1):
+    total = total + i
+
+print("Sum =", total)    
+
