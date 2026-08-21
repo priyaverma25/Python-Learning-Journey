@@ -823,21 +823,21 @@
 #     print(num, "x", i, "=", num * i)
 
 
-# Divisible by 3 and 5
-num = int(input("Enter a number: "))
+# # Divisible by 3 and 5
+# num = int(input("Enter a number: "))
 
-if num % 3 == 0 and num % 5 == 0:
-    print("Divisible by 3 and 5")
-else:
-    print("Not divisible by 3 and 5")
+# if num % 3 == 0 and num % 5 == 0:
+#     print("Divisible by 3 and 5")
+# else:
+#     print("Not divisible by 3 and 5")
  
-# Sum if 1 to n   
-n = int(input("Enter number: "))
+# # Sum if 1 to n   
+# n = int(input("Enter number: "))
 
-total = 0
+# total = 0
 
-for i in range(1, n + 1):
-    total = total + i
+# for i in range(1, n + 1):
+#     total = total + i
 
-print("Sum =", total)    
+# print("Sum =", total)    
 
