@@ -843,35 +843,121 @@
 
 # password Strength checker
 
-password = input("Enter your password: ")
+# password = input("Enter your password: ")
 
-has_upper = False
-has_lower = False
-has_digit = False
-has_special = False
+# has_upper = False
+# has_lower = False
+# has_digit = False
+# has_special = False
 
-special_characters = "!@#$%^&*"
+# special_characters = "!@#$%^&*"
 
-for char in password:
+# for char in password:
 
-    if char.isupper():
-        has_upper = True
+#     if char.isupper():
+#         has_upper = True
 
-    elif char.islower():
-        has_lower = True
+#     elif char.islower():
+#         has_lower = True
 
-    elif char.isdigit():
-        has_digit = True
+#     elif char.isdigit():
+#         has_digit = True
 
-    elif char in special_characters:
-        has_special = True
+#     elif char in special_characters:
+#         has_special = True
 
 
-if len(password) < 8:
-    print("Weak Password: Minimum 8 characters required.")
+# if len(password) < 8:
+#     print("Weak Password: Minimum 8 characters required.")
 
-elif has_upper and has_lower and has_digit and has_special:
-    print("Strong Password")
+# elif has_upper and has_lower and has_digit and has_special:
+#     print("Strong Password")
 
-else:
-    print("Medium Password")
+# else:
+#     print("Medium Password")
+    
+# number guessing game 
+# import random
+
+# secret_number = random.randint(1, 100)
+
+# attempts = 0
+
+# print("Guess a number between 1 and 100")
+
+# while True:
+
+#     guess = int(input("Enter your guess: "))
+#     attempts += 1
+
+#     if guess < secret_number:
+#         print("Too Low!")
+
+#     elif guess > secret_number:
+#         print("Too High!")
+
+#     else:
+#         print("Correct Guess!")
+#         print("Total Attempts:", attempts)
+#         break 
+    
+
+# students grade management system 
+students = {}
+
+def add_student(name, marks):
+    students[name] = marks
+    print(f"{name} added successfully!")
+
+def show_students():
+    if not students:
+        print("No students found.")
+    else:
+        for name, marks in students.items():
+            print(f"{name} : {marks}")
+
+def calculate_grade(marks):
+    if marks >= 90:
+        return "A+"
+    elif marks >= 80:
+        return "A"
+    elif marks >= 70:
+        return "B"
+    elif marks >= 60:
+        return "C"
+    else:
+        return "Fail"
+
+
+while True:
+    print("\n--- Student Management System ---")
+    print("1. Add Student")
+    print("2. Show Students")
+    print("3. Check Grade")
+    print("4. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        name = input("Enter student name: ")
+        marks = int(input("Enter marks: "))
+        add_student(name, marks)
+
+    elif choice == "2":
+        show_students()
+
+    elif choice == "3":
+        name = input("Enter student name: ")
+
+        if name in students:
+            grade = calculate_grade(students[name])
+            print(f"{name}'s Grade: {grade}")
+        else:
+            print("Student not found!")
+
+    elif choice == "4":
+        print("Program ended.")
+        break
+
+    else:
+        print("Invalid choice!")   
